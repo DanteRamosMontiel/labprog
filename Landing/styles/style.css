@@ -154,7 +154,7 @@ body {
     display: block; 
     z-index: 1;
     position: relative;
-    transition: filter 0.3s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 .game-box:hover img {
@@ -255,6 +255,13 @@ body {
 
 .welcome-box{
     color: white;
-    position: center;
-    margin: 10px;
+    opacity: 0.85;
+    animation: backwards;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 50px;
+    margin-bottom: 20px;
 }

@@ -64,7 +64,7 @@ body {
 
 .logo {
     letter-spacing: 2px;
-    font-size: 35px;
+    font-size:40px;
     font-family: var(--font-heading);
     cursor: pointer;
     color: rgb(255, 255, 255, 0.85);
@@ -137,16 +137,59 @@ body {
     padding-bottom: 4px;
 }
 
-.pruebaCajaJuegos{
+.game-box {
     color: white;
-
-    border: 2px solid white;
+    border: 2px solid rgb(56, 55, 55);
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
     height: 352px;
-    width: 264px;    
+    width: 264px;   
 }
 
-.box-container{
+.game-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    z-index: 1;
+    position: relative;
+    transition: filter 0.3s ease;
+}
+
+.game-box:hover img {
+    filter: blur(4px);
+}
+
+.hidden-name {
+    color: white;
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 2; 
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.hidden-year{
+    color: white;
+    position: relative;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.game-box:hover .hidden-name {
+    display: block;
+}
+
+.box-container-games{
     display: grid;
     grid-template-columns: repeat(6, 264px);
     gap: 20px;
@@ -154,7 +197,64 @@ body {
     overflow-x: scroll;
 }
 
+.box-container-games::-webkit-scrollbar {
+    height: 10px;
+}
+
+.box-container-games::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+.box-container-games::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 8px;
+    border: 2px solid #1a1a1a;
+}
+
+.box-container-games {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #1a1a1a;
+}
+
 .main-box-container{
     width: 100%;
     overflow: hidden;
+}
+
+.pictures-box{
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 426px;
+    width: 240px;   
+}
+
+.box-container-pictures{
+    display: grid;
+    grid-template-columns: repeat(2, 264px);
+    grid-template-rows: repeat(3, 264px);
+    gap: 20px;
+    padding: 10px 0px;
+    overflow-x: scroll;
+}
+
+
+.logo-img {
+  width: 80px; 
+  height: 70px;
+  display: block;
+}
+
+.logo-img:hover {
+  filter: drop-shadow(0 5px 10px rgb(98, 37, 117, 0.7));
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+.welcome-box{
+    color: white;
+    position: center;
+    margin: 10px;
 }

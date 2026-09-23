@@ -196,7 +196,41 @@ body {
     margin-top: 30px;
     width: 100%;
     height: 600px;
-    background-color: red;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mini-banner{
+    display: flex;
+    width: max-content;
+    gap: 15px;
+    margin: 30px;
+}
+
+.mini-banner img{
+    width: 300px;
+    height: 140px;
+    object-fit: cover;
+
+}
+
+.movement-right{
+    animation: scrollRight 40s linear infinite;
+}
+
+.movement-left{
+    animation: scrollLeft 40s linear infinite -10s;
+}
+
+/*Defino las animaciones de scroll*/
+@keyframes scrollRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 /*******************************************************

@@ -261,6 +261,7 @@ body {
     
     color: white;
     border: 2px solid rgb(56, 55, 55);
+    box-shadow: 10px 10px 15px rgb(109, 31, 161);
     overflow: hidden;
     border-radius: 10px;
     height: 400px;

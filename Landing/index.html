@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <link rel="stylesheet" href="./styles/style.css ">
+    <link rel="stylesheet" href="./styles/media-querys.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
+    <!--------------------- HEADER ------------------------->
+
     <header class="header-container container-full">
         <div class="header container-xxl">
             <div class="logo">
@@ -32,9 +36,12 @@
             </button>
         </div>
     </header>
+
+    <!---------------------- MAIN -------------------------->
+
     <main class="main container-xxl">
         <section class="banner">
-            <div class ="mini-banner movement-right">
+            <div class="mini-banner movement-right">
                 <img src="./assets/banner/up-row/minibanner1.webp" alt="Juego 1">
                 <img src="./assets/banner/up-row/minibanner2.webp" alt="Juego 2">
                 <img src="./assets/banner/up-row/minibanner3.webp" alt="Juego 3">
@@ -46,7 +53,7 @@
                 <img src="./assets/banner/up-row/minibanner9.webp" alt="Juego 9">
                 <img src="./assets/banner/up-row/minibanner10.webp" alt="Juego 10">
             </div>
-            <div class = "mini-banner movement-left">
+            <div class="mini-banner movement-left">
                 <img src="./assets/banner/mid-row/minibanner1.webp" alt="Juego 1">
                 <img src="./assets/banner/mid-row/minibanner2.webp" alt="Juego 2">
                 <img src="./assets/banner/mid-row/minibanner3.webp" alt="Juego 3">
@@ -58,7 +65,7 @@
                 <img src="./assets/banner/mid-row/minibanner9.webp" alt="Juego 9">
                 <img src="./assets/banner/mid-row/minibanner10.webp" alt="Juego 10">
             </div>
-            <div class ="mini-banner movement-right">
+            <div class="mini-banner movement-right">
                 <img src="./assets/banner/low-row/minibanner1.webp" alt="Juego 1">
                 <img src="./assets/banner/low-row/minibanner2.webp" alt="Juego 2">
                 <img src="./assets/banner/low-row/minibanner3.webp" alt="Juego 3">
@@ -71,26 +78,28 @@
                 <img src="./assets/banner/low-row/minibanner10.webp" alt="Juego 10">
             </div>
 
-            <div class ="big-cover big-cover-appear">
-                <img src="./assets/banner/big-cover/cover1.webp" alt="Juego 1">
-                <img src="./assets/banner/big-cover/cover2.webp" alt="Juego 2">
-                <img src="./assets/banner/big-cover/cover3.webp" alt="Juego 3">
-                <img src="./assets/banner/big-cover/cover4.webp" alt="Juego 4">
-                <img src="./assets/banner/big-cover/cover5.webp" alt="Juego 5">
-                <img src="./assets/banner/big-cover/cover6.webp" alt="Juego 6">
-                <img src="./assets/banner/big-cover/cover7.webp" alt="Juego 7">
-                <img src="./assets/banner/big-cover/cover8.webp" alt="Juego 8">
-                <img src="./assets/banner/big-cover/cover9.webp" alt="Juego 9">
-                <img src="./assets/banner/big-cover/cover10.webp" alt="Juego 10">
+            <div class="banner-front">
+                <div class="big-cover big-cover-appear">
+                    <img src="./assets/banner/big-cover/cover1.webp" alt="Juego 1">
+                    <img src="./assets/banner/big-cover/cover2.webp" alt="Juego 2">
+                    <img src="./assets/banner/big-cover/cover3.webp" alt="Juego 3">
+                    <img src="./assets/banner/big-cover/cover4.webp" alt="Juego 4">
+                    <img src="./assets/banner/big-cover/cover5.webp" alt="Juego 5">
+                    <img src="./assets/banner/big-cover/cover6.webp" alt="Juego 6">
+                    <img src="./assets/banner/big-cover/cover7.webp" alt="Juego 7">
+                    <img src="./assets/banner/big-cover/cover8.webp" alt="Juego 8">
+                    <img src="./assets/banner/big-cover/cover9.webp" alt="Juego 9">
+                    <img src="./assets/banner/big-cover/cover10.webp" alt="Juego 10">
+                </div>
+                <div class="slogan-text">
+                    <div class="slogan-big">REGI<span class="main-color">STER</span></div>
+                    <div class="slogan-big">YOUR</div>
+                    <div class="slogan-big"><span class="main-color italic">GAMES</span></div>
+                    <div><span class="slogan-mid">Anytime, anywhere.</span></div>
+                </div>
             </div>
 
-            <div class ="slogan-text">
-                <div><span class="slogan-big">NO SE QUE</span> <span class = "slogan-big main-color">PONER</span></div>
-                <div><span class="slogan-mid">No se me ocurre nada no soy filosofo</span></div>
-                <div><span class="slogan-small">Gemini generame un eslogan</span></div>
-            </div>
         </section>
-
         <div class="main-box-container">
             <div class="pruebaTextoLinea">
                 <p>Trending</p>
@@ -257,6 +266,32 @@
             </div>
         </div>
     </main>
+
+    <!--------------------- FOOTER ------------------------->
+
+    <footer class="footer-container container-full">
+        <div class="footer container-xxl">
+            <div class="left-side-footer">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">About</li>
+                        <li class="nav-list-item">Privacy & Policy</li>
+                        <li class="nav-list-item">Donations</li>
+                    </ul>
+                </nav>
+                <p class="rights">
+                    © 2026 Gamester. All rights reserved. Keep playing.
+                </p>
+            </div>
+            <div class="right-side-footer">
+                <i class="social-i fa-brands fa-instagram"></i>
+                <i class="social-i fa-brands fa-x-twitter"></i>
+                <i class="social-i fa-brands fa-reddit"></i>
+                <i class="social-i fa-brands fa-discord"></i>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

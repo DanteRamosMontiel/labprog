@@ -105,7 +105,7 @@
 
 .game-pic{
     border: 0px solid rgb(56, 55, 55);
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -116,7 +116,7 @@
 
 .game-pic img{
     max-width: 100%;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px;
     object-fit: cover;
     transition: all 0.2s ease-in-out;
 }
@@ -141,14 +141,16 @@
 .game-title-developer{
     font-size: 18px;
     font-weight: 400;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .game-description{
     font-size: 18px;
     font-weight: 400;
-    color: rgb(142, 141, 141);
+    font-family: var(--font-body);
+    color: beige;
     padding-top: 20px;
+    text-align: justify;
 }
 
 .company-name{
@@ -160,6 +162,7 @@
 .game-title-date{
     font-size: 20px;
     font-weight: 200;
+    padding-bottom: 7px;
 }
 
 /*
@@ -167,15 +170,15 @@
 */
 
 .game-actions{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    padding: 20px 0;
-    margin-bottom: 40px;
+    gap: 20px;
+    padding-top: 20px;
     width: 264px;
     background: linear-gradient(180deg, var(--bg-surface), var(--bg-base));
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     box-shadow: var(--shadow-lg);
 }
 
@@ -184,7 +187,7 @@
     padding: 12px 24px;
     border-radius: 6px;
     border: none;
-    font-family: var(--font-heading);
+    font-family: var(--font-banner);
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -259,10 +262,10 @@
     align-items: left;
     gap: 24px;
     padding: 20px 0px;
-    margin-bottom: 40px;
+    margin-top: 10px;
     width: 264px;
     background: linear-gradient(180deg, var(--bg-surface), var(--bg-base));
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     box-shadow: var(--shadow-lg);
 }
 

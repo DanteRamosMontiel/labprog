@@ -1,0 +1,137 @@
+/*******************************************************
+********************* HEADER (CONTENEDOR) *******************
+*******************************************************/
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+    background: #2B1240;
+    background: linear-gradient(155deg, rgba(26, 26, 26, 0.9) 0%, rgb(66, 4, 117) 40%, rgba(26, 26, 26, 0.9) 100%);
+    box-shadow: var(--shadow-lg);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+/*******************************************************
+********************* LOGO ************************************
+*******************************************************/
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &:hover .logo-img {
+        animation: bounce .5s ease-in-out;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(-4deg) scale(0.95);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.logo-img {
+    width: 45px;
+    height: 35px;
+    transition: all .2s ease-in-out;
+}
+
+.logo-text {
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: var(--font-heading);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all .1s ease-in-out;
+    margin: 0 !important;
+    position: relative;
+    display: inline-block;
+
+    span {
+        color: rgb(109, 31, 161);
+    }
+
+    /* Brillo que cruza el texto del logo al hacer hover */
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        inset: 0;
+        white-space: pre;
+        color: transparent;
+        background: linear-gradient(120deg, transparent 35%, rgba(255, 255, 255, .9) 50%, transparent 65%);
+        background-size: 250% 100%;
+        background-position: -150% 0;
+        -webkit-background-clip: text;
+        background-clip: text;
+        transition: background-position .8s;
+        pointer-events: none;
+    }
+
+    &:hover::before {
+        background-position: 150% 0;
+    }
+}
+
+/*******************************************************
+********************* NAVEGACIÓN ******************************
+*******************************************************/
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-list-item {
+    color: rgb(255, 255, 255, 0.6);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+/*******************************************************
+********************* BOTÓN "JOIN" ******************************
+*******************************************************/
+
+.join-button {
+    color: #ffffff;
+    background-color: var(--brand-primary);
+    font-family: var(--font-body);
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    font-weight: 500;
+    box-shadow: var(--shadow-md);
+
+    &:hover {
+        background-color: var(--brand-hover);
+        transform: scale(0.99);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}

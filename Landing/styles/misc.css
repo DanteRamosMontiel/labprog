@@ -13,3 +13,15 @@
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
+/*******************************************************
+***************** TEXTO CON LINEA ABAJO ****************
+*******************************************************/
+
+.lined-text {
+    color: white;
+    font-family: var(--font-body);
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent) 1;
+    padding-bottom: 4px;
+}

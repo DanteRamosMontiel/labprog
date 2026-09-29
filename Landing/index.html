@@ -32,14 +32,50 @@
 
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-list-item">Home</li>
-                    <li class="nav-list-item">Trending</li>
-                    <li class="nav-list-item">Last Reviews</li>
+                    <li>
+                        <a class="nav-list-item" href="#">Discover</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item" href="#">Trending</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item" href="#">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item" href="#">Games</a>
+                    </li>
                 </ul>
             </nav>
+
             <button class="join-button">
                 Join the community
             </button>
+
+            <button class="menu-ham">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <section class="side-menu">
+                <nav class="nav-side-bar">
+                    <ul class="nav-list-side-bar">
+                        <li>
+                            <a class="nav-list-item item-side-bar" href="#">Discover</a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item item-side-bar" href="#">Trending</a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item item-side-bar" href="#">Reviews</a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item item-side-bar" href="#">Games</a>
+                        </li>
+                        <li class="last-li">
+                            <a class="nav-list-item item-side-bar" href="#">Join the community</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
         </div>
     </header>
 
@@ -111,7 +147,7 @@
                 <p>Trending</p>
             </div>
             <div class="box-container-games">
-                <a  target="_blank" href="./pages/game/index.html">
+                <a href="./pages/game/index.html">
                     <div class="game-box">
                         <img width="262" height="349"
                             src="https://images.igdb.com/igdb/image/upload/t_cover_big/co7zzj.webp" alt="portada1">
@@ -167,8 +203,8 @@
             <div class="gradient-lined-text">
                 <p>What Gamester lets you do</p>
             </div>
-                <p class = "dummy-text">Esto no es un bug aca van cajas</p>
-            </div>
+            <p class="dummy-text">Esto no es un bug aca van cajas</p>
+        </div>
         </div>
         <div class="main-box-container">
             <div class="gradient-lined-text">
@@ -232,11 +268,17 @@
     <footer class="footer-container container-full">
         <div class="footer container-xxl">
             <div class="left-side-footer">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-list-item">About</li>
-                        <li class="nav-list-item">Privacy & Policy</li>
-                        <li class="nav-list-item">Donations</li>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li>
+                        <a class="nav-list-item" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item" href="#">Privacy & Policy</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item" href="#">Donations</a>
+                    </li>
                     </ul>
                 </nav>
                 <p class="rights">
@@ -251,6 +293,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/side-menu.js"></script>
 
 </body>
 

@@ -21,16 +21,99 @@
     border: 1px solid #262327; 
     border-radius: 10px;
     background-color: rgb(31, 20, 31);  
-    padding: 20px;    
+    padding: 15px;    
     margin-bottom: 8px; 
     box-sizing: border-box; 
     width: 30%;
-    min-height: 100px;
+    height: 110px;
+    align-items: center;
+    z-index: 1;
+}
+
+.details-text{
+    color: white;
+    font-family: var(--font-body);
+    font-size: 15px;
+    margin-left: 16px;
+}
+
+.text-450{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: var(--font-body);
+    font-size: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    text-align: center;
+    line-height: 1.2; 
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
 
 .details-box img{
     filter: invert(100%);
-    height: 48px;
-    width: 48px;
+    height: 50px;
+    width: 50px;
+    margin: 0px 5px 0px 5px;
+}
+
+.details-box:hover{
+    background-image: linear-gradient(70deg, rgb(88, 19, 90), rgb(55, 10, 71));
+    transition: background-image 0.5s ease; 
+}
+
+/*******************************************************
+******************** RESPONSIVE <= 900 px   ********************
+*******************************************************/
+
+@media (max-width: 900px) {
+    .details-box img{
+        height: 35px;
+        width: 35px;
+    }
+
+    .details-text{
+        font-size: 9px;
+    }
+}
+
+/*******************************************************
+******************** RESPONSIVE <= 450 px   ********************
+*******************************************************/
+
+@media (max-width: 450px) {
+    .details-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 13px;
+        height: 90px;
+    }
+
+    .details-box img{
+        height: 100%;
+        width: 62px;
+    }
+
+    .details-box:hover img{
+        filter: invert(100%) blur(4px);
+    }
+
+    .details-box:hover .text-450{
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        filter:none;
+    }
+
+    .details-text{
+        display: none;
+    }
+
 }

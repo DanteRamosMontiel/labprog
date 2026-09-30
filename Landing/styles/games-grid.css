@@ -38,7 +38,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    width: 100%;
+    width: 95%;
 }
 
 .hidden-year {
@@ -115,4 +115,14 @@
     gap: 20px;
     padding: 10px 0px;
     justify-content: center;
+}
+
+/***************************************************************
+**************** RESPONSIVE GAMEBOX <= 600px *******************
+****************************************************************/
+
+@media (max-width: 600px) {
+    .box-container-games {
+        grid-template-columns: repeat(6, 170px);
+    }       
 }

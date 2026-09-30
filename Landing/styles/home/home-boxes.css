@@ -78,7 +78,7 @@
     }
 
     .details-text{
-        font-size: 9px;
+        font-size: clamp(8.5px, 1.5vw, 12px);
     }
 }
 

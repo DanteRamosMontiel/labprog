@@ -1,0 +1,29 @@
+/*******************************************************
+**************** CAJAS VISUALES (CONTENEDOR) ************
+*******************************************************/
+
+.details-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    width: 100%;
+    row-gap: 5px;
+    margin-bottom: 15px;
+}
+
+/*******************************************************
+******************** CAJAS VISUALES ********************
+*******************************************************/
+
+.details-box{
+    display: grid;
+    grid-template-columns: max-content 1fr; 
+    border: 1px solid #262327; 
+    border-radius: 10px;
+    background-color: rgb(31, 20, 31);  
+    padding: 20px;    
+    margin-bottom: 8px; 
+    box-sizing: border-box; 
+    width: 100%; 
+    min-height: 150px;
+}

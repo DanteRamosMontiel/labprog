@@ -75,6 +75,7 @@
     font-size: 20px;
     filter: brightness(0.6); 
     transition: filter 0.3s ease;
+    margin-top: 20px;
 }
 
 .load-more-text:hover{

@@ -33,7 +33,7 @@
                 </div>
             </a>
 
-            <nav class="nav">
+            <nav class="nav" aria-label="Main navigation">
                 <ul class="nav-list">
                     <li>
                         <a class="nav-list-item" href="#">Discover</a>
@@ -50,35 +50,33 @@
                 </ul>
             </nav>
 
-            <button class="join-button">
+            <button class="join-button" type="button">
                 Join the community
             </button>
 
-            <button class="menu-ham">
-                <i class="fa-solid fa-bars"></i>
+            <button class="menu-ham" type="button" aria-label="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
 
-            <section class="side-menu">
-                <nav class="nav-side-bar">
-                    <ul class="nav-list-side-bar">
-                        <li>
-                            <a class="nav-list-item item-side-bar" href="#">Discover</a>
-                        </li>
-                        <li>
-                            <a class="nav-list-item item-side-bar" href="#">Trending</a>
-                        </li>
-                        <li>
-                            <a class="nav-list-item item-side-bar" href="#">Reviews</a>
-                        </li>
-                        <li>
-                            <a class="nav-list-item item-side-bar" href="#">Games</a>
-                        </li>
-                        <li class="last-li">
-                            <a class="nav-list-item item-side-bar" href="#">Join the community</a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
+            <nav class="side-menu" aria-label="Mobile navigation">
+                <ul class="nav-list-side-bar">
+                    <li>
+                        <a class="nav-list-item item-side-bar" href="#">Discover</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item item-side-bar" href="#">Trending</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item item-side-bar" href="#">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-item item-side-bar" href="#">Games</a>
+                    </li>
+                    <li class="last-li">
+                        <a class="nav-list-item item-side-bar" href="#">Join the community</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -137,17 +135,17 @@
                     <img src="./assets/banner/big-cover/cover10.webp" alt="Juego 10">
                 </div>
                 <div class="slogan-text">
-                    <div class="slogan-big">REGI<span class="main-color">STER</span></div>
-                    <div class="slogan-big">YOUR</div>
-                    <div class="slogan-big"><span class="main-color italic">GAMES</span></div>
-                    <div><span class="slogan-mid">Anytime, anywhere.</span></div>
+                    <p class="slogan-big">REGI<span class="main-color">STER</span></p>
+                    <p class="slogan-big">YOUR</p>
+                    <p class="slogan-big"><span class="main-color italic">GAMES</span></p>
+                    <p><span class="slogan-mid">Anytime, anywhere.</span></p>
                 </div>
             </div>
 
         </section>
-        <div class="main-box-container">
+        <section class="main-box-container">
             <div class="gradient-lined-text">
-                <p>Trending</p>
+                <h2>Trending</h2>
             </div>
             <div class="box-container-games">
                 <a class = "game-box" href="./pages/game/index.html">
@@ -158,251 +156,253 @@
                         <span class="hidden-year">(1998)</span>
                     </span>
                 </a>
-                <div class="game-box">
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cob5mk.webp" alt="portada1">
                     <span class="hidden-name">
                         Wolverine
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/coaaqu.webp" alt="portada1">
                     <span class="hidden-name">
                         PAYDAY 2
                         <span class="hidden-year">(2013)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cobyue.webp" alt="portada1">
                     <span class="hidden-name">
                         Assassin's Creed Black Flag: Resynced
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cocv1v.webp" alt="portada1">
                     <span class="hidden-name">
                         El GTA 6
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cocv5r.webp" alt="portada1">
                     <span class="hidden-name">
                         The Legend of Zelda: Ocarina of Time
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="main-box-container gamester-features-container">
+        </section>
+        <section class="main-box-container gamester-features-container">
             <div class="gradient-lined-text">
-                <p>What Gamester lets you do</p>
+                <h2>What Gamester lets you do</h2>
             </div>
             <div class="details-container">
-                <div class="details-box">
-                    <img src="assets/home/boxes/controller.webp" alt="Ojo">
+                <article class="details-box">
+                    <img src="assets/home/boxes/controller.webp" alt="Ojo" aria-hidden="true">
                     <p class = "details-text">Play a big catalog of videogames and log them with a few clicks</p>
-                    <p class = "text-450">Play & Log</p>
-                </div>
-                <div class="details-box">
-                    <img src="assets/home/boxes/lupa.webp" alt="Lupa">
+                    <p class = "text-450">Play &amp; Log</p>
+                </article>
+                <article class="details-box">
+                    <img src="assets/home/boxes/lupa.webp" alt="Lupa" aria-hidden="true">
                     <p class = "details-text">Search for new games to play and log</p>
                     <p class = "text-450">Search</p>
-                </div>
-                <div class="details-box">
-                    <img src="assets/home/boxes/reviewer.webp" alt="Reviewer">
+                </article>
+                <article class="details-box">
+                    <img src="assets/home/boxes/reviewer.webp" alt="Reviewer" aria-hidden="true">
                     <p class = "details-text">Give your own scores and reviews to your catalog</p>
                     <p class = "text-450">Review</p>
-                </div>
-                <div class="details-box">
-                    <img src="assets/home/boxes/list.webp" alt="Lista">
+                </article>
+                <article class="details-box">
+                    <img src="assets/home/boxes/list.webp" alt="Lista" aria-hidden="true">
                     <p class = "details-text">Create, visit, and share lists of your preferences</p>
                     <p class = "text-450">Create, visit, share lists</p>
-                </div>
-                <div class="details-box">
-                    <img src="assets/home/boxes/camera.webp" alt="Camara">
+                </article>
+                <article class="details-box">
+                    <img src="assets/home/boxes/camera.webp" alt="Camara" aria-hidden="true">
                     <p class = "details-text">Share pictures of your playthroughs with a vast community</p>
                     <p class = "text-450">Share pictures</p>
-                </div>
-                <div class="details-box">
-                    <img src="assets/home/boxes/share.webp" alt="Compartir">
+                </article>
+                <article class="details-box">
+                    <img src="assets/home/boxes/share.webp" alt="Compartir" aria-hidden="true">
                     <p class = "details-text">Share your favourite games to other people across platforms</p>
                     <p class = "text-450">Share games</p>
-                </div>
+                </article>
             </div>
+        </section>
         </div>
-        </div>
-        <div class="main-box-container">
+        <section class="main-box-container">
             <div class="gradient-lined-text">
-                <p>Recently Reviewed</p>
+                <h2>Recently Reviewed</h2>
             </div>
             <div class="box-container-games">
-                <div class="game-box">
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cocygu.webp" alt="portada1">
                     <span class="hidden-name">
                         Valheim
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2mli.webp" alt="portada1">
                     <span class="hidden-name">
                         BioShock
                         <span class="hidden-year">(2007)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co7n02.webp" alt="portada1">
                     <span class="hidden-name">
                         Palworld
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co670h.webp" alt="portada1">
                     <span class="hidden-name">
                         Baldur's Gate III
                         <span class="hidden-year">(2023)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cobmj0.webp" alt="portada1">
                     <span class="hidden-name">
                         Resident Evil Requiem
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1rb4.webp" alt="portada1">
                     <span class="hidden-name">
                         Devil May Cry 5
                         <span class="hidden-year">(2019)</span>
                     </span>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="main-box-container">
+        </section>
+
+        <section class="main-box-container">
             <div class="gradient-lined-text">
-                <p>Recently Released</p>
+                <h2>Recently Released</h2>
             </div>
             <div class="box-container-games">
-                <div class="game-box">
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cocrjd.webp" alt="portada1">
                     <span class="hidden-name">
                         The Witcher 3: Wild Hunt Remastered
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/coc75p.webp" alt="portada1">
                     <span class="hidden-name">
                         Minecraft Dungeions II
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/coc64f.webp" alt="portada1">
                     <span class="hidden-name">
                         Control Resonant
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/coc5sw.webp" alt="portada1">
                     <span class="hidden-name">
                         Silent Hill: Townfall
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/coc7ma.webp" alt="portada1">
                     <span class="hidden-name">
                         Fire Emblem: Fortune's Weave
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cob7ym.webp" alt="portada1">
                     <span class="hidden-name">
                         The Blood of Dawnwalker
                         <span class="hidden-year">(2026)</span>
                     </span>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="main-box-container">
+        </section>
+
+        <section class="main-box-container">
             <div class="gradient-lined-text">
-                <p>This week's selection</p>
+                <h2>This week's selection</h2>
             </div>
             <div class="box-container-games">
-                <div class="game-box">
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2dto.webp" alt="portada1">
                     <span class="hidden-name">
                         Halo Infinite
                         <span class="hidden-year">(2021)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1ozz.webp" alt="portada1">
                     <span class="hidden-name">
                         Shadow of the Colossus
                         <span class="hidden-year">(2005)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co3ddc.webp" alt="portada1">
                     <span class="hidden-name">
                         God of War
                         <span class="hidden-year">(2005)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/cob9ed.webp" alt="portada1">
                     <span class="hidden-name">
                         Dark Souls III
                         <span class="hidden-year">(2016)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1izy.webp" alt="portada1">
                     <span class="hidden-name">
                         Infamous: Second Son
                         <span class="hidden-year">(2014)</span>
                     </span>
-                </div>
-                <div class="game-box">
+                </article>
+                <article class="game-box">
                     <img 
                         src="https://images.igdb.com/igdb/image/upload/t_cover_big/co21ro.webp" alt="portada1">
                     <span class="hidden-name">
                         Super Mario Galaxy
                         <span class="hidden-year">(2007)</span>
                     </span>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <!--------------------- FOOTER ------------------------->
@@ -410,13 +410,13 @@
     <footer class="footer-container container-full">
         <div class="footer container-xxl">
             <div class="left-side-footer">
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Footer navigation">
                     <ul class="footer-nav-list">
                         <li>
                         <a class="nav-list-item" href="#">About</a>
                     </li>
                     <li>
-                        <a class="nav-list-item" href="#">Privacy & Policy</a>
+                        <a class="nav-list-item" href="#">Privacy &amp; Policy</a>
                     </li>
                     <li>
                         <a class="nav-list-item" href="#">Donations</a>
@@ -424,14 +424,14 @@
                     </ul>
                 </nav>
                 <p class="rights">
-                    © 2026 Gamester. All rights reserved. Keep playing.
+                    &copy; 2026 Gamester. All rights reserved. Keep playing.
                 </p>
             </div>
             <div class="right-side-footer">
-                <i class="social-i fa-brands fa-instagram"></i>
-                <i class="social-i fa-brands fa-x-twitter"></i>
-                <i class="social-i fa-brands fa-reddit"></i>
-                <i class="social-i fa-brands fa-discord"></i>
+                <i class="social-i fa-brands fa-instagram" aria-hidden="true"></i>
+                <i class="social-i fa-brands fa-x-twitter" aria-hidden="true"></i>
+                <i class="social-i fa-brands fa-reddit" aria-hidden="true"></i>
+                <i class="social-i fa-brands fa-discord" aria-hidden="true"></i>
             </div>
         </div>
     </footer>

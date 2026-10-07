@@ -1,40 +1,46 @@
+.gamester-features-container{
+    margin-bottom: 20px;
+}
+
 /*******************************************************
 **************** CAJAS VISUALES (CONTENEDOR) ************
 *******************************************************/
 
-.details-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 8px;
     width: 100%;
-    row-gap: 5px;
     margin-top: 10px;
+    padding: 0px 5px 0px 0px;
 }
 
 /*******************************************************
 ******************** CAJAS VISUALES ********************
 *******************************************************/
 
-.details-box{
-    display: grid;
-    grid-template-columns: max-content 1fr; 
-    border: 1px solid #262327; 
-    border-radius: 10px;
-    background-color: rgb(31, 20, 31);  
-    padding: 15px;    
-    margin-bottom: 8px; 
-    box-sizing: border-box; 
-    width: 30%;
-    height: 110px;
+.details-box {
+    display: flex;
     align-items: center;
-    z-index: 1;
+    cursor: pointer;
+    gap: 10px;
+    padding: 20px 15px;
+    min-height: 100px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-color: var(--brand-hover);
+    transition: all .1s ease-in-out;
+
+    &:hover{
+        background-color: #36174d;
+        transform: scale(0.99);
+    }
 }
 
 .details-text{
     color: white;
     font-family: var(--font-body);
     font-size: 15px;
-    margin-left: 16px;
 }
 
 .text-450{
@@ -57,63 +63,5 @@
 
 .details-box img{
     filter: invert(100%);
-    height: 50px;
-    width: 50px;
-    margin: 0px 5px 0px 5px;
-}
-
-.details-box:hover{
-    background-image: linear-gradient(70deg, rgb(88, 19, 90), rgb(55, 10, 71));
-    transition: background-image 0.5s ease; 
-}
-
-/*******************************************************
-******************** RESPONSIVE <= 900 px   ********************
-*******************************************************/
-
-@media (max-width: 900px) {
-    .details-box img{
-        height: 35px;
-        width: 35px;
-    }
-
-    .details-text{
-        font-size: clamp(8.5px, 1.5vw, 12px);
-    }
-}
-
-/*******************************************************
-******************** RESPONSIVE <= 450 px   ********************
-*******************************************************/
-
-@media (max-width: 450px) {
-    .details-box {
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 13px;
-        height: 90px;
-    }
-
-    .details-box img{
-        height: 100%;
-        width: 62px;
-    }
-
-    .details-box:hover img{
-        filter: invert(100%) blur(4px);
-    }
-
-    .details-box:hover .text-450{
-        opacity: 1;
-        visibility: visible;
-        z-index: 2;
-        filter:none;
-    }
-
-    .details-text{
-        display: none;
-    }
-
+    max-width: 35px;
 }
